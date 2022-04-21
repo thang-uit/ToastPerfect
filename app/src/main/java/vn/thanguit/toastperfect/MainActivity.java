@@ -12,6 +12,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ToastPerfect.makeText(this, ToastPerfect.SUCCESS, "OK em", Toast.LENGTH_SHORT).show();
+        ToastPerfect.makeText(this, ToastPerfect.SUCCESS, "Toast Perfect", Toast.LENGTH_SHORT).show();
     }
 }
