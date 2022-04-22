@@ -27,7 +27,8 @@ The library provides 4 common simple toast messages (Success, Error, Warning and
 `ToastPerfect.makeText(this, ToastPerfect.INFORMATION, "Today is a beautiful day!", ToastPerfect.BOTTOM, ToastPerfect.LENGTH_SHORT).show();` | <img src="images/UI/ToastInformation.png" width="100%"></img>  |
 
 **3 Position Display**
-| Position |
+
+<td colspan=3> Position
 | ToastPerfect.TOP | ToastPerfect.CENTER | ToastPerfect.BOTTOM |
 |---|---|---|
 |<img src="images/Position/ToastTop.png" width="100%"></img>|<img src="images/Position/ToastCenter.png" width="100%"></img>|<img src="images/Position/ToastBottom.png" width="100%"></img>|
