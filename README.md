@@ -28,6 +28,6 @@ The library provides 4 common simple toast messages (Success, Error, Warning and
 
 3 Position Display
 | Position |
-| ToastPerfect.TOP | ToastPerfect.CENTER | ToastPerfect.BOTTOM
+| ToastPerfect.TOP | ToastPerfect.CENTER | ToastPerfect.BOTTOM |
 |---|---|---|
 |<img src="images/Position/ToastTop.png"></img>|<img src="images/Position/ToastCenter.png"></img>|<img src="images/Position/ToastBottom.png"></img>|
