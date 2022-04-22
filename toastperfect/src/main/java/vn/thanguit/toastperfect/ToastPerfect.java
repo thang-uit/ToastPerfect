@@ -20,33 +20,44 @@ public class ToastPerfect extends Toast {
     public static final int WARNING = 3;
     public static final int INFORMATION = 4;
 
-    public static final int TOP = Gravity.TOP;
-    public static final int CENTER = Gravity.CENTER;
-    public static final int BOTTOM = Gravity.BOTTOM;
-
+    public static final int TOP = 5;
+    public static final int CENTER = 6;
+    public static final int BOTTOM = 7;
 
     public ToastPerfect(Context context) {
         super(context);
     }
 
-    public static Toast makeText(Context context, int type, String content, int duration) {
-        Toast toast = new Toast(context);
+    public static Toast makeText(Context context, int type, String content, int position, int duration) {
+        Toast toast = new Toast(context); // Init
 
-        toast.setDuration(duration);
+        toast.setDuration(duration); // Set duration for Toast
 
-        toast.setGravity(BOTTOM, 0, 0);
+        switch (position) { // Set position for Toast
+            case TOP: {
+                toast.setGravity(Gravity.TOP, 0, 0);
+                break;
+            }
+            case CENTER: {
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                break;
+            }
+            case BOTTOM: {
+                toast.setGravity(Gravity.BOTTOM, 0, 0);
+                break;
+            }
+        }
 
-
-        View layout = LayoutInflater.from(context).inflate(R.layout.layout_toast, null, false);
+        View layout = LayoutInflater.from(context).inflate(R.layout.layout_toast, null, false); // Get View from layout
         ImageView ivIconToast = layout.findViewById(R.id.ivIconToast);
         TextView tvTextToast = layout.findViewById(R.id.tvTextToast);
-        if (content.isEmpty()) {
+        if (content.isEmpty()) { // Set text for Toast
             tvTextToast.setText("");
         } else {
             tvTextToast.setText(content.trim());
         }
 
-        switch (type) {
+        switch (type) { // Set layout for Toast
             case SUCCESS: {
                 ivIconToast.setImageResource(R.drawable.ic_success);
                 break;
@@ -67,7 +78,7 @@ public class ToastPerfect extends Toast {
             }
         }
 
-        toast.setView(layout);
+        toast.setView(layout); // Set View for Toast
         return toast;
     }
 }
