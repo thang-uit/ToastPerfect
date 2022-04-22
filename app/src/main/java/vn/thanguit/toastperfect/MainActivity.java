@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         activityMainBinding.btnToast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ToastPerfect.makeText(MainActivity.this, new Random().nextInt(4) + 1, getString(R.string.app_name), ToastPerfect.LENGTH_LONG).show();
+                ToastPerfect.makeText(MainActivity.this, new Random().nextInt(4) + 1, getString(R.string.app_name), ToastPerfect.LENGTH_SHORT).show();
             }
         });
     }
