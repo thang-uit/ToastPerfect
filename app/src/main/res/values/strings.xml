@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">ToastPerfect</string>
 
-    <string name="btnToast">Random Toast Perfect</string>
+    <string name="btnToast">Toast Perfect</string>
 </resources>
