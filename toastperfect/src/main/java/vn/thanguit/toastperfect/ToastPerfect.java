@@ -35,7 +35,7 @@ public class ToastPerfect extends Toast {
 
         switch (position) { // Set position for Toast
             case TOP: {
-                toast.setGravity(Gravity.TOP, 0, 0);
+                toast.setGravity(Gravity.TOP, 0, 100);
                 break;
             }
             case CENTER: {
@@ -43,7 +43,7 @@ public class ToastPerfect extends Toast {
                 break;
             }
             case BOTTOM: {
-                toast.setGravity(Gravity.BOTTOM, 0, 0);
+                toast.setGravity(Gravity.BOTTOM, 0, 100);
                 break;
             }
         }
