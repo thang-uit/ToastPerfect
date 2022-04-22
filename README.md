@@ -31,4 +31,4 @@ The library provides 4 common simple toast messages (Success, Error, Warning and
 | <td colspan=3>Position</td> |
 | ToastPerfect.TOP | ToastPerfect.CENTER | ToastPerfect.BOTTOM |
 |---|---|---|
-|<img src="images/Position/ToastTop.png" width="100%"></img>|<img src="images/Position/ToastCenter.png" width="100%"></img>|<img src="images/Position/ToastBottom.png" width="100%"></img>|
+| <img src="images/Position/ToastTop.png" width="100%"></img> | <img src="images/Position/ToastCenter.png" width="100%"></img> | <img src="images/Position/ToastBottom.png" width="100%"></img> |
