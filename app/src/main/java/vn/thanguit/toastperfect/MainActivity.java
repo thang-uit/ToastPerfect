@@ -1,7 +1,6 @@
 package vn.thanguit.toastperfect;
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,11 +16,6 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(activityMainBinding.getRoot());
 
-        activityMainBinding.btnToast.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ToastPerfect.makeText(MainActivity.this, new Random().nextInt(4) + 1, getString(R.string.app_name), ToastPerfect.LENGTH_SHORT).show();
-            }
-        });
+        activityMainBinding.btnToast.setOnClickListener(view -> ToastPerfect.makeText(MainActivity.this, new Random().nextInt(4) + 1, getString(R.string.app_name), ToastPerfect.LENGTH_SHORT).show());
     }
 }
