@@ -7,16 +7,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/*********************************************************
+ * Toast Perfect Library
+ * Author: Chu Nam Thang (Call me ThangUIT) - Viet Nam
+ * Date: 2022
+******************************************************** */
+
 public class ToastPerfect extends Toast {
-
-    public ToastPerfect(Context context) {
-        super(context);
-    }
-
     public static final int SUCCESS = 1;
     public static final int ERROR = 2;
     public static final int WARNING = 3;
     public static final int INFORMATION = 4;
+
+//    public static final int SHORT = LENGTH_SHORT;
+//    public static final int LONG = LENGTH_LONG;
+
+    public ToastPerfect(Context context) {
+        super(context);
+    }
 
     public static Toast makeText(Context context, int type, String content, int duration) {
         Toast toast = new Toast(context);
