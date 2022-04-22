@@ -21,13 +21,13 @@ ToastPerfect.makeText(this, ToastPerfect.SUCCESS, "Today is a beautiful day!", T
 The library provides 4 common simple toast messages (Success, Error, Warning and Information). The table below shows a complete example with its pictures.
 | Toast | Picture |
 | ------------- | ------------- |
-| `ToastPerfect.makeText(this, ToastPerfect.SUCCESS, "Today is a beautiful day!", ToastPerfect.BOTTOM, ToastPerfect.LENGTH_SHORT).show();` | <img src="images/UI/ToastSuccess.png" width="200"></img>  |
-`ToastPerfect.makeText(this, ToastPerfect.ERROR, "Today is a beautiful day!", ToastPerfect.BOTTOM, ToastPerfect.LENGTH_SHORT).show();` | <img src="images/UI/ToastError.png" width="200"></img>  |
-`ToastPerfect.makeText(this, ToastPerfect.WARNING, "Today is a beautiful day!", ToastPerfect.BOTTOM, ToastPerfect.LENGTH_SHORT).show();` | <img src="images/UI/ToastWarning.png" width="200"></img>  |
-`ToastPerfect.makeText(this, ToastPerfect.INFORMATION, "Today is a beautiful day!", ToastPerfect.BOTTOM, ToastPerfect.LENGTH_SHORT).show();` | <img src="images/UI/ToastInformation.png" width="200"></img>  |
+| `ToastPerfect.makeText(this, ToastPerfect.SUCCESS, "Today is a beautiful day!", ToastPerfect.BOTTOM, ToastPerfect.LENGTH_SHORT).show();` | <img src="images/UI/ToastSuccess.png" width="500"></img>  |
+`ToastPerfect.makeText(this, ToastPerfect.ERROR, "Today is a beautiful day!", ToastPerfect.BOTTOM, ToastPerfect.LENGTH_SHORT).show();` | <img src="images/UI/ToastError.png" width="500"></img>  |
+`ToastPerfect.makeText(this, ToastPerfect.WARNING, "Today is a beautiful day!", ToastPerfect.BOTTOM, ToastPerfect.LENGTH_SHORT).show();` | <img src="images/UI/ToastWarning.png" width="500"></img>  |
+`ToastPerfect.makeText(this, ToastPerfect.INFORMATION, "Today is a beautiful day!", ToastPerfect.BOTTOM, ToastPerfect.LENGTH_SHORT).show();` | <img src="images/UI/ToastInformation.png" width="500"></img>  |
 
 3 Position Display
 | Position |
 | ToastPerfect.TOP | ToastPerfect.CENTER | ToastPerfect.BOTTOM |
 |---|---|---|
-|<img src="images/Position/ToastTop.png"></img>|<img src="images/Position/ToastCenter.png"></img>|<img src="images/Position/ToastBottom.png"></img>|
+|<img src="images/Position/ToastTop.png" width="100%"></img>|<img src="images/Position/ToastCenter.png" width="100%"></img>|<img src="images/Position/ToastBottom.png" width="100%"></img>|
