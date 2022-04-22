@@ -16,6 +16,6 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(activityMainBinding.getRoot());
 
-        activityMainBinding.btnToast.setOnClickListener(view -> ToastPerfect.makeText(MainActivity.this, new Random().nextInt(4) + 1, getString(R.string.app_name), ToastPerfect.TOP,ToastPerfect.LENGTH_SHORT).show());
+        activityMainBinding.btnToast.setOnClickListener(view -> ToastPerfect.makeText(MainActivity.this, new Random().nextInt(4) + 1, getString(R.string.app_name), ToastPerfect.BOTTOM,ToastPerfect.LENGTH_SHORT).show());
     }
 }
