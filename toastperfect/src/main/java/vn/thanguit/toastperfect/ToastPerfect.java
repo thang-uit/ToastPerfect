@@ -9,8 +9,8 @@ import android.widget.Toast;
 
 /*********************************************************
  * Toast Perfect Library
- * Author: Chu Nam Thang (Call me ThangUIT) - Viet Nam
- * Date: 2022
+ * Author: Chu Nam Thang (Call me ThangUIT) - From Viet Nam <3
+ * Year: 2022
 ******************************************************** */
 
 public class ToastPerfect extends Toast {
@@ -18,9 +18,6 @@ public class ToastPerfect extends Toast {
     public static final int ERROR = 2;
     public static final int WARNING = 3;
     public static final int INFORMATION = 4;
-
-//    public static final int SHORT = LENGTH_SHORT;
-//    public static final int LONG = LENGTH_LONG;
 
     public ToastPerfect(Context context) {
         super(context);
