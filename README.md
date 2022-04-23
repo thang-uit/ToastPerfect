@@ -1,5 +1,7 @@
 # ToastPerfect Android Library
 
+[![](https://jitpack.io/v/thang-uit/ToastPerfect.svg)](https://jitpack.io/#thang-uit/ToastPerfect)
+
 ## Description
     ToastPerfect help you display Toast library for Android more beautiful and professional.
     The library provides 4 common simple toast messages (Success, Error, Warning and Information).
