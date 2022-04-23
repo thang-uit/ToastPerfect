@@ -10,16 +10,16 @@ ext {
     PUBLISH_URL = 'https://github.com/thang-uit/ToastPerfect'
     PUBLISH_LICENSE_NAME = 'Apache License'
     PUBLISH_LICENSE_URL =
-            'https://github.com/elye/loaderviewlibrary/blob/master/LICENSE'
-    PUBLISH_DEVELOPER_ID = 'elye'
-    PUBLISH_DEVELOPER_NAME = 'My Name'
-    PUBLISH_DEVELOPER_EMAIL = 'myemail@mail.com'
+            'https://github.com/thang-uit/ToastPerfect/blob/main/LICENSE'
+    PUBLISH_DEVELOPER_ID = 'thang-uit'
+    PUBLISH_DEVELOPER_NAME = 'Chu Nam Thang'
+    PUBLISH_DEVELOPER_EMAIL = 'namthangmu123@gmail.com'
     PUBLISH_SCM_CONNECTION =
-            'scm:git:github.com/elye/loaderviewlibrary.git'
+            'scm:git:github.com/thang-uit/ToastPerfect.git'
     PUBLISH_SCM_DEVELOPER_CONNECTION =
-            'scm:git:ssh://github.com/elye/loaderviewlibrary.git'
+            'scm:git:ssh://github.com/thang-uit/ToastPerfect.git'
     PUBLISH_SCM_URL =
-            'https://github.com/elye/loaderviewlibrary/tree/master'
+            'https://github.com/thang-uit/ToastPerfect/tree/main'
 }
 
 apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
