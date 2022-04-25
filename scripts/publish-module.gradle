@@ -4,9 +4,13 @@ apply plugin: 'signing'
 task androidSourcesJar(type: Jar) {
     archiveClassifier.set('sources')
     if (project.plugins.findPlugin("com.android.library")) {
+        // For Android libraries
         from android.sourceSets.main.java.srcDirs
+        from android.sourceSets.main.kotlin.srcDirs
     } else {
+        // For pure Kotlin libraries, in case you have them
         from sourceSets.main.java.srcDirs
+        from sourceSets.main.kotlin.srcDirs
     }
 }
 
@@ -31,52 +35,52 @@ afterEvaluate {
                 if (project.plugins.findPlugin("com.android.library")) {
                     from components.release
                 } else {
-                    artifact("$buildDir/libs/${project.getName()}-${version}.jar")
+                    from components.java
                 }
 
                 artifact androidSourcesJar
+//                artifact javadocJar
 
                 // Mostly self-explanatory metadata
                 pom {
                     name = PUBLISH_ARTIFACT_ID
-                    description = PUBLISH_DESCRIPTION
-                    url = PUBLISH_URL
+                    description = 'ToastPerfect Android SDK'
+                    url = 'https://github.com/thang-uit/ToastPerfect'
                     licenses {
                         license {
-                            name = PUBLISH_LICENSE_NAME
-                            url = PUBLISH_LICENSE_URL
+                            name = 'Apache License'
+                            url = 'https://github.com/thang-uit/ToastPerfect/blob/main/LICENSE'
                         }
                     }
                     developers {
                         developer {
-                            id = PUBLISH_DEVELOPER_ID
-                            name = PUBLISH_DEVELOPER_NAME
-                            email = PUBLISH_DEVELOPER_EMAIL
+                            id = 'thang-uit'
+                            name = 'Chu Nam Thang'
+                            email = 'namthangmu123@gmail.com'
                         }
+                        // Add all other devs here...
                     }
 
                     // Version control info - if you're using GitHub, follow the
                     // format as seen here
                     scm {
-                        connection = PUBLISH_SCM_CONNECTION
-                        developerConnection = PUBLISH_SCM_DEVELOPER_CONNECTION
-                        url = PUBLISH_SCM_URL
+                        connection = 'scm:git:github.com/thang-uit/ToastPerfect.git'
+                        developerConnection = 'scm:git:ssh://github.com/thang-uit/ToastPerfect.git'
+                        url = 'https://github.com/thang-uit/ToastPerfect/tree/main'
                     }
                 }
             }
         }
     }
 }
-
-ext["signing.keyId"] = rootProject.ext["signing.keyId"]
-ext["signing.password"] = rootProject.ext["signing.password"]
-ext["signing.secretKeyRingFile"] = rootProject.ext["signing.secretKeyRingFile"]
+//ext["signing.keyId"] = rootProject.ext["signing.keyId"]
+//ext["signing.password"] = rootProject.ext["signing.password"]
+//ext["signing.secretKeyRingFile"] = rootProject.ext["signing.secretKeyRingFile"]
 
 signing {
-    useInMemoryPgpKeys(
-            System.getenv("OSS_SIGNING_KEY_ID"),
-            System.getenv("OSS_SIGNING_KEY"),
-            System.getenv("OSS_SIGNING_PASSWORD"),
-    )
+    rootProject.ext["signing.keyId"]
+    rootProject.ext["signing.secretKeyRingFile"]
+    rootProject.ext["signing.password"]
+
     sign publishing.publications
 }
