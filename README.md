@@ -7,6 +7,16 @@
     The library provides 4 common simple toast messages (Success, Error, Warning and Information).
     I'm create this library with the purpose of improving user interface and helping me save development time.
 
+Download
+-----
+
+Gradle is the only supported build configuration, so just add the dependency to your project `build.gradle` file:
+
+```groovy
+dependencies {
+    implementation 'io.github.thang-uit:toastperfectlibrary:1.0.0'
+}
+```
 
 Usage
 -----
