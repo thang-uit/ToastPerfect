@@ -13,4 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
-./toastperfect/secretkey.gpg
+/toastperfect/secretkey.gpg
