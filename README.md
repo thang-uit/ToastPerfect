@@ -1,5 +1,7 @@
 # ToastPerfect Android Library
 
+[![](https://img.shields.io/badge/Language%20-Java-4682b4.svg)](https://jitpack.io/#thang-uit/ToastPerfect)
+[![](https://img.shields.io/badge/API-%2B%2016-lightgrey.svg)](https://jitpack.io/#thang-uit/ToastPerfect)
 [![](https://jitpack.io/v/thang-uit/ToastPerfect.svg)](https://jitpack.io/#thang-uit/ToastPerfect)
 
 ## Description
