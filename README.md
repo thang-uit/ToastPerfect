@@ -17,7 +17,7 @@ Gradle is the only supported build configuration, so just add the dependency to 
 
 ```groovy
 dependencies {
-    implementation 'io.github.thang-uit:toastperfectlibrary:1.0.0'
+    implementation 'io.github.thang-uit:toastperfectlibrary:1.0.1'
 }
 ```
 

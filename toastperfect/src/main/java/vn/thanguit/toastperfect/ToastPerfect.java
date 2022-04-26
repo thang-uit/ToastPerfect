@@ -8,11 +8,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-/*************************************************************
- * Toast Perfect Library
- * Author: Chu Nam Thang (Call me ThangUIT) - From Viet Nam <3
- * Year: 2022
-*************************************************************/
+/*
+Toast Perfect Library
+Author: Chu Nam Thang (Call me ThangUIT) - From Viet Nam <3
+Year: 2022
+*/
 
 public class ToastPerfect extends Toast {
     public static final int SUCCESS = 1;
