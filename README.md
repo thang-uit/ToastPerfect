@@ -3,6 +3,7 @@
 [![](https://img.shields.io/badge/Language%20-Java-4682b4.svg)](https://jitpack.io/#thang-uit/ToastPerfect)
 [![](https://img.shields.io/badge/API-%2B%2021-lightgrey.svg)](https://jitpack.io/#thang-uit/ToastPerfect)
 [![](https://jitpack.io/v/thang-uit/ToastPerfect.svg)](https://jitpack.io/#thang-uit/ToastPerfect)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.thang-uit/toastperfectlibrary.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.thang-uit%22%20AND%20a:%22toastperfectlibrary%22)
 
 ## Description
     ToastPerfect help you display Toast library for Android more beautiful and professional.
